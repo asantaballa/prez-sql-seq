@@ -1,8 +1,8 @@
-If Object_Id(N'Seq3', N'TF') Is Not Null
-Drop Function Seq3
+If Object_Id(N'Seq', N'TF') Is Not Null
+Drop Function Seq
 Go
 
-Create Function Seq3 (@From Int, @To Int)
+Create Function Seq (@From Int, @To Int)
 Returns @SeqTable Table (Seq Int) 
 As
 Begin

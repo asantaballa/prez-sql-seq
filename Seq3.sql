@@ -23,3 +23,4 @@ Begin
 End
 Go
  
+ select Seq, Seq*2 from Seq(1,10)

@@ -8,4 +8,4 @@
 
 - Discuss where need sequence
 - - Real examples
---- Generating date table
+- - - Generating date table

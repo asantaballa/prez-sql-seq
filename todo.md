@@ -3,6 +3,7 @@
 - [ ] Rename functions to TSeq
 - [ ] Write the procedural version
 - [ ] Write the CTE version
+- [ ] Update github to have presentation as website
 
 # Overall flow
 

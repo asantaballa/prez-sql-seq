@@ -13,6 +13,8 @@
 
 -- Things in date table --
 
+https://www.mssqltips.com/sqlservertip/4054/creating-a-date-dimension-or-calendar-table-in-sql-server/
+
 ```
 CREATE TABLE dbo.DateDimension
 (

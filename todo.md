@@ -13,7 +13,9 @@
 * Example: Using sequences
 * Example: Using digits
 * Example: Using systables + ranking function
-
+* == Other ==
+* Show as basis for date range function
+* Talk about performance
 
 
 -- Things in date table --

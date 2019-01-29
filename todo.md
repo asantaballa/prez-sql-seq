@@ -9,6 +9,11 @@
 * Discuss where need sequence
   * Real examples
     * Generating date table
+  * But mention that am looking at pretty general solution, not just date table.
+* Example: Using sequences
+* Example: Using digits
+* Example: Using systables + ranking function
+
 
 
 -- Things in date table --

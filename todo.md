@@ -1,4 +1,4 @@
-# T Do
+# To Do
 
 - Rename functions to TSeq
 - Write the procedural version

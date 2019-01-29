@@ -49,7 +49,7 @@ CREATE TABLE dbo.DateDimension
 GO
 ```
 
--- Weird varioting on the digits approch --
+-- Weird variation on the digits approch --
 ```
 INSERT #dim([date]) 
 SELECT d

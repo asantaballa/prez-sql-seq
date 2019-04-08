@@ -8,7 +8,8 @@ ORDER BY MONTH(svo.OrderDate)
 SELECT 
   Month = Seq.Seq
 , OrderCount = COUNT(svo.SalesOrderId)
-FROM Seq(1,12) 
+FROM Seq	--(1,12) 
 LEFT JOIN SeqViewOrders svo ON MONTH(svo.OrderDate) = Seq.Seq
+WHERE Seq.Seq BETWEEN 1 AND 12
 GROUP BY Seq.Seq
 ORDER BY Seq.Seq

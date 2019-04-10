@@ -1,3 +1,6 @@
+USE Demo01
+GO
+
 WITH DayBase AS
 (
 	SELECT 

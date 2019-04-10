@@ -1,3 +1,6 @@
+USE Demo01
+GO
+
 IF OBJECT_ID('dbo.SeqT', 'U') IS NOT NULL DROP TABLE dbo.SeqT; 
 
 CREATE TABLE SeqT

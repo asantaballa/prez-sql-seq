@@ -1,3 +1,6 @@
+USE Demo01
+GO
+
 -- Using existing objects as series
 
 SELECT TOP 1000
@@ -6,8 +9,8 @@ FROM sys.objects
 
 SELECT TOP 1000
    Seq = ROW_NUMBER () OVER ( ORDER BY t1.NAME )
-FROM sys.objects t1
-CROSS JOIN sys.objects t2
+FROM  sys.objects t1
+	, sys.objects t2
 
 -- Procedurally as table function
 
@@ -58,6 +61,8 @@ GO
 
 SELECT TOP 1000 Seq FROM SeqF(1,1000) ORDER BY Seq
 GO
+
+-- --
 
 --SELECT COUNT(*) FROM sys.objects
 --SELECT TOP 100 * FROM sys.objects

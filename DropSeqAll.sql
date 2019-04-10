@@ -1,3 +1,4 @@
-IF OBJECT_ID('dbo.Seq', 'U') IS NOT NULL DROP TABLE dbo.Seq; 
-IF OBJECT_ID('dbo.Seq', 'TF') IS NOT NULL DROP FUNCTION dbo.Seq; 
-
+IF OBJECT_ID('dbo.SeqT', 'U') IS NOT NULL DROP TABLE dbo.SeqT; 
+Go
+IF OBJECT_ID('dbo.SeqF', 'TF') IS NOT NULL DROP FUNCTION dbo.SeqF; 
+Go

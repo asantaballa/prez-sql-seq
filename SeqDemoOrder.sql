@@ -6,10 +6,10 @@ GROUP BY MONTH(svo.OrderDate)
 ORDER BY MONTH(svo.OrderDate)
 
 SELECT 
-  Month = Seq.Seq
+  Month = SeqT.Seq
 , OrderCount = COUNT(svo.SalesOrderId)
-FROM Seq	--(1,12) 
-LEFT JOIN SeqViewOrders svo ON MONTH(svo.OrderDate) = Seq.Seq
-WHERE Seq.Seq BETWEEN 1 AND 12
-GROUP BY Seq.Seq
-ORDER BY Seq.Seq
+FROM SeqT	--(1,12) 
+LEFT JOIN SeqViewOrders svo ON MONTH(svo.OrderDate) = SeqT.Seq
+WHERE SeqT.Seq BETWEEN 1 AND 12
+GROUP BY SeqT.Seq
+ORDER BY SeqT.Seq

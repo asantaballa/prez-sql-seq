@@ -11,10 +11,10 @@ CROSS JOIN sys.objects t2
 
 -- Procedurally as table function
 
-IF OBJECT_ID('dbo.Seq', 'TF') IS NOT NULL DROP FUNCTION dbo.Seq; 
+IF OBJECT_ID('dbo.SeqF', 'TF') IS NOT NULL DROP FUNCTION dbo.SeqF; 
 GO
 
-CREATE FUNCTION Seq (@From Int, @To Int)
+CREATE FUNCTION SeqF (@From Int, @To Int)
 RETURNS @RetSeq TABLE (Seq INT) 
 AS
 BEGIN
@@ -28,15 +28,15 @@ BEGIN
 END
 GO
 
-SELECT TOP 1000 Seq FROM Seq(1,1000) ORDER BY Seq
+SELECT TOP 1000 Seq FROM SeqF(1,1000) ORDER BY Seq
 GO
 
 -- Combining digits as table fucntion
 
-IF OBJECT_ID('dbo.Seq', 'TF') IS NOT NULL DROP FUNCTION dbo.Seq; 
+IF OBJECT_ID('dbo.SeqF', 'TF') IS NOT NULL DROP FUNCTION dbo.SeqF; 
 GO
 
-CREATE FUNCTION Seq (@From Int, @To Int)
+CREATE FUNCTION SeqF (@From Int, @To Int)
 RETURNS @RetSeq TABLE (Seq INT) 
 AS
 BEGIN
@@ -56,7 +56,7 @@ BEGIN
 END
 GO
 
-SELECT TOP 1000 Seq FROM Seq(1,1000) ORDER BY Seq
+SELECT TOP 1000 Seq FROM SeqF(1,1000) ORDER BY Seq
 GO
 
 --SELECT COUNT(*) FROM sys.objects

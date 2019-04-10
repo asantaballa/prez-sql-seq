@@ -15,4 +15,4 @@ BEGIN
 	SET @i = @i + 1
 END
 
-SELECT * FROM SeqT
+SELECT Seq FROM SeqT -- "where ..."
